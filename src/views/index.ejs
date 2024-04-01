@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/main.css">
+    <%- include ('partials/head') %>
+    <title><%= title%></title>
+</head>
+<body>
+    <%- include ('partials/navigation') %>
+    <div class="container-fluid ml-auto d-flex justify-content-center my-4">
+        <div class="row">
+            <div class="col-lg-6 d-flex justify-content-center align-items-center my-4">
+                <img src="/img/vrreina.jpeg" alt="logo" class="img-fluid img-thumbnail w-50">
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center  align-items-start">
+                <h4 class="my-2">HELLO MY NAME IS</h4>
+                <h1 class="">Valentina Ramirez Reina</h1>
+                <h6>Technology, Analysis, and Software Development</h6>
+                <div class="social_media my-3">
+                    <a href="https://www.facebook.com/valentina.ramirezreina.50?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://instagram.com/valereina15?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+                <a href=""class ="btn" onclick="window.open('/img/CV.pdf')">Download CV</a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!--  SOBRE MI-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hi, I'm Valentina Ramirez Reina, is responsible and respectful person, with an inclination towards teamwork. However, I also function effectively in individual work environments. My discipline is a strength that allows me to approach challenges with determination and find viable solutions. </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Eduation</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>I.E. "Julian Motta Salas" (2020)</span> <br> Techinical bachelor - electrical specialty </li>
+                        <li><span>Surcolombiana university (2023)</span> <br> Internet of things diploma</li>
+                        <li><span>SENA (2025)</span> <br> Technologist in Software Analysis and Development</li>
+                        <li><span>Surcolombiana university (2025)</span> <br> Technology in Software Development </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Front Developer 2022</span> <br> Lorem ipsum dolor sit amet consectetur.</li>
+                        <li><span>Backend 2023 </span> <br>Lorem ipsum dolor sit amet consectetur. </li>
+                        
+                    </ul>
+                </div>
+                </div>
+                <div class="about-col-1">
+                    <img src="/img/about.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------  SKILLS  ------->
+    <div class="skills" id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="main-text">
+                    <h5 class="text-center">Technical and professional</h5>
+                    <h2 class="text-center">Skills</h2>
+                </div>
+        
+                    <div class="skill-main">
+                        <div class="skill-left">
+                            <h3>Technical Skills</h3>
+                            <div class="skill-bar">
+                                <div class="info">
+                                    <p>HTML</p>
+                                    <p>75%</p>
+                                </div>
+                                <div class="bar">
+                                    <span class="html"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="info">
+                                    <p>CSS</p>
+                                    <p>65%</p>
+                                </div>
+                                <div class="bar">
+                                    <span class="css"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="info">
+                                    <p>JavaScript</p>
+                                    <p>70%</p>
+                                </div>
+                                <div class="bar">
+                                    <span class="javascript"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="info">
+                                    <p>Laravel</p>
+                                    <p>55%</p>
+                                </div>
+                                <div class="bar">
+                                    <span class="laravel"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-right">
+                            <h3>Professional Skills</h3>
+                            <div class="professional">
+                                <div class="box">
+                                    <div class="circle" data-dots="80" data-percent="90"></div>
+                                    <div class="text">
+                                        <big>90%</big>
+                                        <small>Team work</small>
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <div class="circle" data-dots="80" data-percent="60"></div>
+                                    <div class="text">
+                                        <big>60%</big>
+                                        <small>Creative</small>
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <div class="circle" data-dots="80" data-percent="80"></div>
+                                    <div class="text">
+                                        <big>80%</big>
+                                        <small>Responsible</small>
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <div class="circle" data-dots="80" data-percent="90"></div>
+                                    <div class="text">
+                                        <big>70%</big>
+                                        <small>Disciplined</small>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+   <div class="projects" id="projects">
+    <div class="container">
+        <div class="row">
+            <div class="projects-text">
+                <h1 class="sub-text">Projects</h1>
+            </div>
+            <div class="container p-3">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <img src="/img/img.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-center">Soluciones_Electricas_RYR V.02</h5>
+                        <div class="icons-tecno">
+                            <p>
+                                <i class="fa-brands fa-html5" style="color: rgb(255, 155, 73);"></i>
+                                <i class="fa-brands fa-css3-alt" style="color: rgb(111, 190, 255);"></i>
+                                <i class="fa-brands fa-square-js" style="color: rgb(254, 237, 2);"></i>
+                                <i class="fa-brands fa-php" style="color: rgb(152, 49, 255);"></i>
+                                <i class="fa-brands fa-bootstrap" style="color: #B197FC;"></i>
+                            </p>
+                        </div>
+                        <div class="container text-center icons">
+                          <a onclick="window.open('https://github.com/vramirezreina/Soluciones_Electricas_RYR.git', '_blank')"><i class="fa-brands fa-github"></i></a>
+                          <a href="https://soluciones-electricas-ryr.netlify.app/" target="_blank"><i class="fa-solid fa-link" style="color: #ff56f6;"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="/img/img2.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-center">Web Portfolio V.01</h5>
+                        <div class="icons-tecno">
+                            <p>
+                                <i class="fa-brands fa-html5" style="color: rgb(255, 155, 73);"></i>
+                                <i class="fa-brands fa-css3-alt" style="color: rgb(111, 190, 255);"></i>
+                                <i class="fa-brands fa-square-js" style="color: rgb(254, 237, 2);"></i>
+                            </p>
+                        </div>
+                        <div class="container text-center icons">
+                          <a onclick="window.open('https://github.com/vramirezreina/Portafolio.git', '_blank')"><i class="fa-brands fa-github"></i></a>
+                          <a href=""><i class="fa-solid fa-link" style="color: #ff56f6;"></i></a> 
+                        </div>
+                      </div>
+                    </div>
+                
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="/img/img3.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-center">Soluciones_Electricas_RYR V.01</h5>
+                        <div class="icons-tecno">
+                            <p>
+                                <i class="fa-brands fa-html5" style="color: rgb(255, 155, 73);"></i>
+                                <i class="fa-brands fa-css3-alt" style="color: rgb(111, 190, 255);"></i>
+                            </p>
+                        </div>
+                        <div class="container text-center icons">
+                          <a onclick="window.open('https://github.com/vramirezreina/Frontend_solucionesRYR.git', '_blank')"><i class="fa-brands fa-github"></i></a>
+                          <a href=""><i class="fa-solid fa-link" style="color: #ff56f6;"></i></a> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </div>
+   </div>
+    
+
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 contact-left">
+                    <h1 class="sub-title">Contac me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>valentinaramirezreina30@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i> +57 312 213 5690</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/valentina.ramirezreina.50?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/valereina15?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+              </div>
+                <div class="col-lg-6">
+                    <div class="card-body text-start my-4">
+                        <form>
+                            <div class="mb-4">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="You name" class="form-control">
+                            </div>
+                            <div class="mb-3 ">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="You email" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje">Message</label>
+                                <textarea name="mensaje" rows="3" id="mensaje" class="form-control" placeholder="You Message"></textarea>
+                            </div>
+                            <button class="btn1 btn-primary btn-block">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <%- include ('partials/footer') %>
+
+   <script src="/js/script.js">
+    
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+footer {
+    background-color: #131313; /* Cambia el color de fondo según tu diseño */
+    color: #fff; /* Color de texto blanco */
+    padding: 10px 0; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+}
+
+footer .icons-social {
+    list-style-type: none; /* Quita los estilos de la lista */
+    padding: 0; /* Elimina el espacio interior */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Espacio entre los iconos y el texto */
+}
+
+footer .icons-social li {
+    margin: 0 5px; /* Espaciado entre los iconos */
+}
+
+footer .icons-social a {
+    color: #fff; /* Color de los iconos */
+    font-size: 20px; /* Tamaño de los iconos */
+}
+
+footer ul {
+    list-style-type: none; /* Quita los estilos de la lista */
+    padding: 0; /* Elimina el espacio interior */
+}
+
+footer ul li {
+    display: inline-block; /* Muestra los elementos en línea */
+    margin: 0 10px; /* Espaciado entre los elementos */
+}
+
+footer ul li a {
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+footer p {
+    margin-top: 10px; /* Espacio superior del párrafo */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+/* Estilos para hacer el footer responsive */
+@media (max-width: 768px) {
+    footer {
+        padding: 20px; /* Reduce el espaciado interno en dispositivos más pequeños */
+    }
+    footer .icons-social li,
+    footer ul li {
+        margin: 10px; /* Aumenta el espacio entre los elementos en dispositivos más pequeños */
+    }
+}
